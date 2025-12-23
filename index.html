@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakchyam Thapa - AI Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Particle Network Background -->
+    <canvas id="particleCanvas"></canvas>
+    
+    <!-- Animated Background Blobs -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-name">Sakchyam</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="glitch-wrapper">
+                <h1 class="glitch" data-text="Sakchyam Thapa">Sakchyam Thapa</h1>
+            </div>
+            <div class="typing-container">
+                <p class="typing-text">
+                    <span class="typed-text"></span>
+                    <span class="cursor">&nbsp;</span>
+                </p>
+            </div>
+            <p class="hero-description">
+                Transforming complex problems into intelligent AI-powered solutions
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <span>Explore Projects</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Get In Touch</span>
+                </a>
+            </div>
+            
+            <!-- Tech Stack Floating Pills -->
+            <div class="tech-pills">
+                <span class="pill">Python</span>
+                <span class="pill">FastAPI</span>
+                <span class="pill">Machine Learning</span>
+                <span class="pill">Computer Vision</span>
+                <span class="pill">RAG Systems</span>
+                <span class="pill">.NET</span>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-number">01.</span>
+                    About Me
+                </h2>
+                <div class="title-line"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-card glass-card">
+                    <div class="card-inner">
+                        <div class="about-image-wrapper">
+                            <div class="image-frame">
+                                 <img src="profile.png" alt="Profile Picture" class="profile-img">
+                                <div class="profile-placeholder">
+                                    <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+                                        <circle cx="60" cy="35" r="20" stroke="var(--primary)" stroke-width="3"/>
+                                        <path d="M20 100C20 78 37 65 60 65C83 65 100 78 100 100" stroke="var(--primary)" stroke-width="3" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="about-text">
+                            <h3 class="about-subtitle">AI Developer & Backend Specialist</h3>
+                            <p>Currently working on cutting-edge AI & Machine Learning projects including regression models, prediction systems, and RAG-based AI chatbots using FastAPI, Pinecone & transformer embeddings.</p>
+                            
+                            <div class="about-highlights">
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">🚀</div>
+                                    <div>
+                                        <h4>Currently Building</h4>
+                                        <p>Backend systems with FastAPI, PostgreSQL, JWT authentication & web scraping systems using Playwright</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">📈</div>
+                                    <div>
+                                        <h4>Open to Collaborate</h4>
+                                        <p>AI/ML & Computer Vision projects, Backend APIs (FastAPI, Flask, .NET), Open-source RAG & automation tools</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">🌱</div>
+                                    <div>
+                                        <h4>Currently Learning</h4>
+                                        <p>Advanced ML optimization, Computer Vision real-time detection, Cloud deployment (AWS EC2)</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">⚡</div>
+                                    <div>
+                                        <h4>Fun Fact</h4>
+                                        <p>I love turning real-world problems into AI-powered systems 🚀</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-number">02.</span>
+                    Technical Skills
+                </h2>
+                <div class="title-line"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">🤖</div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Building intelligent prediction systems and regression models</p>
+                    <ul class="tech-list">
+                        <li>Python (OOP)</li>
+                        <li>Data Preprocessing</li>
+                        <li>Feature Engineering</li>
+                        <li>Model Evaluation</li>
+                        <li>Scikit-Learn, Pandas, NumPy</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">👁️</div>
+                    <h3>Computer Vision</h3>
+                    <p>Real-time video processing and object detection systems</p>
+                    <ul class="tech-list">
+                        <li>OpenCV</li>
+                        <li>Real-time Processing</li>
+                        <li>HSV Color Segmentation</li>
+                        <li>Contour Detection</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">🔗</div>
+                    <h3>RAG Systems</h3>
+                    <p>Retrieval-Augmented Generation with vector databases</p>
+                    <ul class="tech-list">
+                        <li>Pinecone</li>
+                        <li>Transformer Embeddings</li>
+                        <li>Similarity Search</li>
+                        <li>Document Chunking</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">⚡</div>
+                    <h3>Backend Development</h3>
+                    <p>Scalable APIs with authentication and database management</p>
+                    <ul class="tech-list">
+                        <li>FastAPI / Flask</li>
+                        <li>.NET Web API</li>
+                        <li>PostgreSQL / SQL Server</li>
+                        <li>JWT Authentication</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">🕷️</div>
+                    <h3>Web Scraping</h3>
+                    <p>Async scraping with concurrency and change detection</p>
+                    <ul class="tech-list">
+                        <li>Playwright (Async)</li>
+                        <li>asyncio, Semaphore</li>
+                        <li>Change Detection</li>
+                        <li>Concurrent Processing</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">☁️</div>
+                    <h3>DevOps & Cloud</h3>
+                    <p>Deployment and version control</p>
+                    <ul class="tech-list">
+                        <li>Git / GitLab</li>
+                        <li>AWS EC2</li>
+                        <li>Docker</li>
+                        <li>CI/CD</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Preview Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-number">03.</span>
+                    Featured Projects
+                </h2>
+                <div class="title-line"></div>
+            </div>
+            
+            <div class="projects-preview">
+                <p class="projects-intro">Showcasing innovative solutions across AI, ML, Computer Vision, and Backend Development</p>
+                
+                <div class="project-categories">
+                    <div class="category-card glass-card">
+                        <div class="category-icon">🧠</div>
+                        <h3>AI & ML Projects</h3>
+                        <p>5+ Projects</p>
+                        <ul>
+                            <li>Bike Rental Prediction</li>
+                            <li>House Price Estimation</li>
+                            <li>Car Price Prediction</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="category-card glass-card">
+                        <div class="category-icon">🔮</div>
+                        <h3>RAG & AI Chatbots</h3>
+                        <p>2+ Projects</p>
+                        <ul>
+                            <li>RAG-Based Chatbot</li>
+                            <li>Vector Search Systems</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="category-card glass-card">
+                        <div class="category-icon">⚙️</div>
+                        <h3>Backend Systems</h3>
+                        <p>6+ Projects</p>
+                        <ul>
+                            <li>Task Management APIs</li>
+                            <li>E-Commerce Platforms</li>
+                            <li>Inventory Systems</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="category-card glass-card">
+                        <div class="category-icon">👁️</div>
+                        <h3>Computer Vision</h3>
+                        <p>2+ Projects</p>
+                        <ul>
+                            <li>Flame Detection System</li>
+                            <li>AI Parking System</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <a href="#" class="btn btn-primary btn-large">
+                    <span>View All Projects</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-number">04.</span>
+                    Get In Touch
+                </h2>
+                <div class="title-line"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-card glass-card">
+                    <h3>Let's Build Something Amazing Together</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:sakchyamthapa.2006@gmail.com" class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-info">
+                                <h4>Email</h4>
+                                <p>sakchyamthapa.2006@gmail.com</p>
+                            </div>
+                        </a>
+                        
+                        <a href="tel:+9779702238711" class="contact-method">
+                            <div class="method-icon">📱</div>
+                            <div class="method-info">
+                                <h4>Phone</h4>
+                                <p>+977 9702238711</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://github.com/SakchyamThapa" target="_blank" class="contact-method">
+                            <div class="method-icon">💻</div>
+                            <div class="method-info">
+                                <h4>GitHub</h4>
+                                <p>@SakchyamThapa</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/sakchyam-thapa-894730343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="contact-method">
+                            <div class="method-icon">💼</div>
+                            <div class="method-info">
+                                <h4>LinkedIn</h4>
+                                <p>Sakchyam Thapa</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="location-info">
+                        <div class="location-icon">📍</div>
+                        <p>Shantinagar, Kathmandu, Nepal</p>
+                    </div>
+                    
+                    <a href="path/to/SakchyamThapa_CV.pdf" download="Sakchyam_Thapa_CV.pdf" class="btn btn-primary download-cv-btn">
+                        <span>📄</span> Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>&copy; 2024 Sakchyam Thapa. Crafted with passion & code.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/SakchyamThapa" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/sakchyam-thapa-894730343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a>
+                <a href="mailto:sakchyamthapa.2006@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
